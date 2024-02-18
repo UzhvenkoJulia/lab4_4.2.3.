@@ -1,9 +1,12 @@
-from utils import factorial
+from utils import is_power_of_five
 
 def main():
-    n = 5
-    result = factorial(n)
-    print(f"the factorial of {n} is {result}")
+    # виклик ф is_power_of_five з utils.py
+    number = 125
+    if is_power_of_five(number):
+        print(f"{number} є степенем 5")
+    else:
+        print(f"{number} не є степенем 5")
 
 if __name__ == "__main__":
     main()
